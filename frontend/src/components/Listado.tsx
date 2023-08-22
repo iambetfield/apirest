@@ -25,12 +25,12 @@ const Listado = () => {
   },[]);
 
   const loadClients = async () => {
-    const result = await axios.get("http://localhost:8080/clientes");
+    const result = await axios.get("http://3.19.54.43:8080/clientes");
    setClientes(result.data)
   }
 
   const deleteCliente = async(id:any)=>{
-    await axios.delete(`http://localhost:8080/clientes/${id}`)
+    await axios.delete(`http://3.19.54.43:8080/clientes/${id}`)
     loadClients();
   }
     

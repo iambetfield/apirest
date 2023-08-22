@@ -11,7 +11,7 @@ const ViewUser = () => {
   });
 
   const loadCliente = async () => {
-    const result = await axios.get(`http://localhost:8080/clientes/${id}`);
+    const result = await axios.get(`http://3.19.54.43:8080/clientes/${id}`);
     setCliente(result.data);
   };
 
